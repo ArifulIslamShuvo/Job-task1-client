@@ -16,7 +16,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="completed-tasks" element={<CompletedTasks />} />
         <Route path="to-do" element={<ToDo />} />
-        <Route path="to-do" element={<ToDo />} />
         <Route path="Calendar" element={<Calendar />} />
       </Routes>
       <Footer />
