@@ -19,7 +19,7 @@ function App() {
         <Route path="completed-tasks" element={<CompletedTasks />} />
         <Route path="to-do" element={<ToDo />} />
         <Route path="Calendar" element={<Calendar />} />
-        <Route path="home/:id" element={<EditTask />} />
+        <Route path="task/:id" element={<EditTask />} />
       </Routes>
       <Footer />
     </div>

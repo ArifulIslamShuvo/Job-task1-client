@@ -10,7 +10,7 @@ const TaskRow = ({task}) => {
 
 
     const navigateProduct = id => {
-        navigate(`/home/${id}`);
+        navigate(`/task/${id}`);
     }
 
     const completedTask = (taskcomplet) => {
