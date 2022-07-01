@@ -18,6 +18,7 @@ const CompletedTasks = () => {
                     <h2 className="text-center text-2xl font-bold text-secondary">Completed Tasks</h2>
                     <div class="overflow-x-auto">
                         <table class="table w-full">
+                            
                             <thead>
                                 <tr>
                                     <th></th>
