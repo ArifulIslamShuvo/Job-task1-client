@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     const menuItems = <>
+    <li><Link className="mx-1" to="/">Home</Link></li> 
     <li><Link className="mx-1" to="/completed-tasks">Completed-Tasks</Link></li> 
     <li><Link className="mx-1" to="/to-do">To-Do</Link></li> 
     <li><Link className="mx-1" to="/Calendar">Calendar</Link></li> 

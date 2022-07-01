@@ -5,11 +5,24 @@ const ToDo = () => {
 
     const handleSubmit = event => {
         event.preventDefault();
-        const task = event.target.task.value
-
+        const task = event.target.task.value;
         console.log(task);
+        const inputTask = {task};
+        
+
+        const url = `http://localhost:5000/task`
+        fetch(url,{
+            method: 'POST',
+            headers: {'content-type' : 'application/json'},
+            body: JSON.stringify(inputTask)
+        })
+        .then(res => res.json())
+        .then(result=> console.log(result))
+        
         setTask('')
     };
+
+
 
 return (
     <div className='flex h-screen justify-center items-center'>
