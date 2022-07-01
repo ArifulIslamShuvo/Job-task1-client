@@ -7,7 +7,7 @@ const Home = () => {
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/task`)
+        fetch(`https://stormy-cliffs-82713.herokuapp.com/task`)
             .then(res => res.json())
             .then(data => setTasks(data))
 
@@ -16,8 +16,8 @@ const Home = () => {
     return (
         <div className="mx-10">
             <h2 className="text-2xl font-bold text-secondary p-3">DAILY TASK</h2>
-            <div class="overflow-x-auto">
-                <table class="table w-full">
+            <div className="overflow-x-auto">
+                <table className="table w-full">
                     <thead>
                         <tr>
                             <th></th>
@@ -27,7 +27,7 @@ const Home = () => {
                     </thead>
                     <tbody>
                         {tasks.map((task, index) => <TaskRow
-                         key={tasks._id}
+                         key={task._id}
                          task={task}
                         ></TaskRow>)}
                     </tbody>
